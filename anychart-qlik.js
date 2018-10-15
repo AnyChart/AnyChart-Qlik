@@ -86,6 +86,10 @@ define([
               anychart['licenseKey'](config.credits.licenseKey);
             }
 
+            if (config.defaultTheme && typeof config.defaultTheme === 'string') {
+              anychart['theme'](config.defaultTheme);
+            }
+
             for (var l in config.localization) {
               if (typeof anychart['format'][l] === 'function') {
                 anychart['format'][l](String(config.localization[l]));
