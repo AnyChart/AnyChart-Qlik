@@ -131,7 +131,9 @@ define([
           }
 
           return qlik.Promise.resolve();
-        }
+        },
+
+        resize: function($element, layout) {}
       };
     });
 
