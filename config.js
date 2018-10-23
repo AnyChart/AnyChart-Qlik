@@ -25,8 +25,8 @@ define([], function() {
     // defaultTheme: "darkTurquoise",
 
     settings: {
-      // These values affect hypercube height (num rows in data page).
-      // maxDimensions * maxMeasures should be less than 10000
+      // These values affect initial hypercube width and height.
+      // maxDimensions * maxMeasures should be <= 10000
       maxDimensions: 5,
       maxMeasures: 15
     }

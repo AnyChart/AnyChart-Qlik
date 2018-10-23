@@ -25,7 +25,7 @@ define([
       var builder = new chartBuilder();
       var editor = new chartEditor();
       var hCubeWidth = config.settings.maxDimensions + config.settings.maxMeasures;
-      var hCubeInitialHeight = Math.floor(10000 / Math.min(10000, hCubeWidth));
+      var hCubeHeight = Math.floor(10000 / Math.min(10000, hCubeWidth));
       var documentURI = null;
 
       return {
@@ -36,7 +36,7 @@ define([
             qMeasures: [],
             qInitialDataFetch: [{
               qWidth: hCubeWidth,
-              qHeight: hCubeInitialHeight
+              qHeight: hCubeHeight
             }]
           },
           selectionMode: "CONFIRM"
@@ -74,8 +74,7 @@ define([
               });
             }
 
-          } else if (dataAdapter.loadData(view, $element, layout, hCubeWidth)) {
-
+          } else if (dataAdapter.loadData(view, $element, layout)) {
             if (documentURI !== document.documentURI) {
               anychart['graphics']['updateReferences']();
               documentURI = document.documentURI;
@@ -127,7 +126,9 @@ define([
             }
 
           } else {
-            // Load next data page
+            $element.append('<h1>Loading data...</h1>');
+            // Loading animation
+            // $element.append($('<div/>').attr({"class": "qv-loader"}).css({"height": "90px", "width": "90px", "margin-top": "10px"}));
           }
 
           return qlik.Promise.resolve();
