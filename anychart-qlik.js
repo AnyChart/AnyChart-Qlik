@@ -52,8 +52,6 @@ define([
         },
 
         paint: function($element, layout) {
-          $element.html('');
-
           var view = this;
           var inputLocale = typeof config.localization.inputLocale === 'string' && config.localization.inputLocale;
           var outputLocale = typeof config.localization.outputLocale === 'string' && config.localization.outputLocale;
@@ -67,14 +65,20 @@ define([
               require([localeUrl], function() {
                 view.paint($element, layout);
               });
+              return qlik.Promise.resolve();
+
             } else if (outputLocale && !anychart['format']['locales'][outputLocale]) {
               localeUrl = '//cdn.anychart.com/releases/v8/locales/' + outputLocale + '.js';
               require([localeUrl], function() {
                 view.paint($element, layout);
               });
+              return qlik.Promise.resolve();
             }
+          }
 
-          } else if (dataAdapter.loadData(view, $element, layout)) {
+          dataAdapter.loadData(view, $element, layout).then(function() {
+            $element.html('');
+
             if (documentURI !== document.documentURI) {
               anychart['graphics']['updateReferences']();
               documentURI = document.documentURI;
@@ -124,12 +128,7 @@ define([
                 $element.html(str);
               }
             }
-
-          } else {
-            $element.append('<h1>Loading data...</h1>');
-            // Loading animation
-            // $element.append($('<div/>').attr({"class": "qv-loader"}).css({"height": "90px", "width": "90px", "margin-top": "10px"}));
-          }
+          });
 
           return qlik.Promise.resolve();
         },

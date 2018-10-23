@@ -1,6 +1,5 @@
 define([], function() {
   var self = this;
-  self.rawData = [];
 
   self.loadData = function(view, $element, layout) {
     var hc = layout.qHyperCube;
@@ -12,6 +11,11 @@ define([], function() {
     }
 
     if (totalRows > loadedRows) {
+      $element.html('');
+      $element.append('<h1>Loading data...</h1>');
+      // Loading animation
+      // $element.append($('<div/>').attr({"class": "qv-loader"}).css({"height": "90px", "width": "90px", "margin-top": "10px"}));
+
       var width = hc.qSize.qcx;
       var height = Math.floor(5000 / width);
       var numPages = Math.ceil((totalRows - loadedRows) / height);
@@ -32,7 +36,7 @@ define([], function() {
       }
 
       var backendApi = view.backendApi;
-      var pagesPr = pageDefs.reduce(function(prev, curr) {
+      return pageDefs.reduce(function(prev, curr) {
         // Return a new promise
         return new Promise(function(resolve, reject) {
           // When the previous promise is done
@@ -47,15 +51,9 @@ define([], function() {
         });
 
       }, Promise.resolve([]));
-
-      pagesPr.then(function(pages) {
-        // Data is loaded. Ready to draw chart.
-        view.paint($element, layout);
-      });
-      return false;
     }
 
-    return true;
+    return Promise.resolve([]);
   };
 
   self.prepareData = function(view, layout, options) {
