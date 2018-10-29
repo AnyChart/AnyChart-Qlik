@@ -125,10 +125,10 @@ define([
                     'Also you can use multiple measures and dimensions. Please use "Dimensions", "Measures" and "Sorting" tabs to setup your data:' +
                     '<div class="screenshot screenshot-2"></div></div></div>';
 
-                $element.html(str);
+                  $element.html(str);
+                }
               }
-            }
-          });
+
 
           return qlik.Promise.resolve();
         },
