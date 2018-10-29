@@ -139,7 +139,7 @@ define([
                 $element.html(str);
               }
             }
-
+          });
 
           return qlik.Promise.resolve();
         },
