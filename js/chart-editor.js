@@ -34,6 +34,9 @@ define(['./../config', './../js/data-adapter'],
                 defaults.push({'key': [['chart'], ['settings'], 'credits().logoSrc()'], 'value': config.credits.logoSrc});
             }
 
+            if (typeof config.defaultTheme === 'string')
+              defaults.push({'key': [['anychart'], 'theme()'], 'value': config.defaultTheme});
+
             // defaults.push({'key': [['chart'], ['settings'], 'xAxis().labels().position()'], 'value': 'normal'});
 
             editor['setDefaults'](defaults);

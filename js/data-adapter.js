@@ -1,33 +1,59 @@
 define([], function() {
   var self = this;
-  self.rawData = [];
 
-  self.loadData = function(view, $element, layout, hCubeWidth) {
-    self.rawData.length = 0;
-    var lastrow = 0;
+  self.loadData = function(view, $element, layout) {
+    var hc = layout.qHyperCube;
+    var totalRows = hc.qSize.qcy;
 
-    //loop through the rows we have
-    view.backendApi.eachDataRow(function(index, row) {
-      lastrow = index;
-      self.rawData.push(row);
-    });
-
-    var rowCount = view.backendApi.getRowCount();
-    if (rowCount > lastrow + 1) {
-      //we havent got all the rows yet, so get some more, 1000 rows
-      var requestPage = [{
-        qTop: lastrow + 1,
-        qLeft: 0,
-        qWidth: hCubeWidth,
-        qHeight: Math.min(1000, rowCount - lastrow)
-      }];
-      view.backendApi.getData(requestPage).then(function(dataPages) {
-        view.paint($element, layout);
-      });
-      return false;
+    var loadedRows = 0;
+    for (var p = 0; p < hc.qDataPages.length; p++) {
+      loadedRows += hc.qDataPages[p].qMatrix.length;
     }
 
-    return true;
+    if (totalRows > loadedRows) {
+      $element.html('');
+      $element.append('<h1>Loading data...</h1>');
+      // Loading animation
+      // $element.append($('<div/>').attr({"class": "qv-loader"}).css({"height": "90px", "width": "90px", "margin-top": "10px"}));
+
+      var width = hc.qSize.qcx;
+      var height = Math.floor(5000 / width);
+      var numPages = Math.ceil((totalRows - loadedRows) / height);
+
+      var top = loadedRows;
+      var pageDefs = [];
+      for (var i = 0; i < numPages; i++) {
+        if (numPages - 1 === i)
+          height = totalRows - top;
+
+        pageDefs.push({
+          qTop: top,
+          qLeft: 0,
+          qWidth: width,
+          qHeight: height
+        });
+        top += height;
+      }
+
+      var backendApi = view.backendApi;
+      return pageDefs.reduce(function(prev, curr) {
+        // Return a new promise
+        return new Promise(function(resolve, reject) {
+          // When the previous promise is done
+          prev.then(function(accPages) {
+            // Get the new page
+            backendApi.getData([curr]).then(function(newPage) {
+              // Add the latest page to the accumulated array of pages and resolve the promise with that accumulated array
+              accPages.push(newPage);
+              resolve(accPages);
+            })
+          })
+        });
+
+      }, Promise.resolve([]));
+    }
+
+    return Promise.resolve([]);
   };
 
   self.prepareData = function(view, layout, options) {
@@ -71,39 +97,40 @@ define([], function() {
 
     result.tokens = tokens;
 
-    view.backendApi.eachDataRow(function(index, row) {
-      // if (index === 3) console.log("Row:", index, row);
-      var processedRow = {};
-      var groupedDimValue = '';
+    for (var p = 0; p < hc.qDataPages.length; p++) {
+      for (var m = 0; m < hc.qDataPages[p].qMatrix.length; m++) {
+        var row = hc.qDataPages[p].qMatrix[m];
+        var processedRow = {};
+        var groupedDimValue = '';
 
-      for (var j = 0; j < row.length; j++) {
-        var value;
-        if (row[j]['qState'] === 'O' || row[j]['qState'] === 'S' || row[j]['qIsOtherCell']) {
-          // dimension
-          value = row[j]['qText'];
-          groupedDimValue = groupedDimValue ? groupedDimValue + '_' + value : value;
+        for (var j = 0; j < row.length; j++) {
+          var value;
+          if (row[j]['qState'] === 'O' || row[j]['qState'] === 'S' || row[j]['qIsOtherCell']) {
+            // dimension
+            value = row[j]['qText'];
+            groupedDimValue = groupedDimValue ? groupedDimValue + '_' + value : value;
 
-          result.dimensions[j]['indexes'].push(row[j]["qElemNumber"]);
+            result.dimensions[j]['indexes'].push(row[j]["qElemNumber"]);
 
-        } else {
-          // measure
-          value = row[j]['qIsNull'] ?
-              null :
-              row[j]['qNum'] === 'NaN' ? row[j]['qText'] : row[j]['qNum'];
+          } else {
+            // measure
+            value = row[j]['qIsNull'] ?
+                null :
+                row[j]['qNum'] === 'NaN' ? row[j]['qText'] : row[j]['qNum'];
+          }
+
+          processedRow[fieldKeys[j]] = value;
         }
 
-        processedRow[fieldKeys[j]] = value;
+        if (result.dimensions.length > 1) {
+          // Grouped dimensions field
+          processedRow['dimensionGroup'] = groupedDimValue;
+        }
+
+        result.data.push(processedRow);
       }
+    }
 
-      if (result.dimensions.length > 1) {
-        // Grouped dimensions field
-        processedRow['dimensionGroup'] = groupedDimValue;
-      }
-
-      result.data.push(processedRow);
-    });
-
-    // console.log(result.data);
     return result;
   };
 

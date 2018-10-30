@@ -15,7 +15,7 @@ define([
 
       "css!./lib/anychart-ui.min.css",
       "css!./lib/anychart-editor.min.css",
-      "css!./lib/fonts.css",
+      "css!./lib/anychart-font.min.css",
       "css!./style.css"
     ],
     function($, pDef, config, qlik, dataAdapter, chartBuilder, chartEditor, proj4) {
@@ -25,8 +25,19 @@ define([
       var builder = new chartBuilder();
       var editor = new chartEditor();
       var hCubeWidth = config.settings.maxDimensions + config.settings.maxMeasures;
-      var hCubeInitialHeight = Math.floor(10000 / Math.min(10000, hCubeWidth));
+      var hCubeHeight = Math.floor(10000 / Math.min(10000, hCubeWidth));
       var documentURI = null;
+
+      //remove default Qlik font-family for SVG objects
+      for (var i = 0; i < document.styleSheets.length; i++) {
+        var sheet = document.styleSheets[i];
+        for (var j = 0; j < sheet.cssRules.length; j++) {
+          var rule = sheet.cssRules[j];
+          if (rule.style && rule.selectorText == ".qv-object *") {
+            rule.style.removeProperty("font-family");
+          }
+        }
+      }
 
       return {
         initialProperties: {
@@ -36,7 +47,7 @@ define([
             qMeasures: [],
             qInitialDataFetch: [{
               qWidth: hCubeWidth,
-              qHeight: hCubeInitialHeight
+              qHeight: hCubeHeight
             }]
           },
           selectionMode: "CONFIRM"
@@ -52,8 +63,6 @@ define([
         },
 
         paint: function($element, layout) {
-          $element.html('');
-
           var view = this;
           var inputLocale = typeof config.localization.inputLocale === 'string' && config.localization.inputLocale;
           var outputLocale = typeof config.localization.outputLocale === 'string' && config.localization.outputLocale;
@@ -67,14 +76,19 @@ define([
               require([localeUrl], function() {
                 view.paint($element, layout);
               });
+              return qlik.Promise.resolve();
+
             } else if (outputLocale && !anychart['format']['locales'][outputLocale]) {
               localeUrl = '//cdn.anychart.com/releases/v8/locales/' + outputLocale + '.js';
               require([localeUrl], function() {
                 view.paint($element, layout);
               });
+              return qlik.Promise.resolve();
             }
+          }
 
-          } else if (dataAdapter.loadData(view, $element, layout, hCubeWidth)) {
+          dataAdapter.loadData(view, $element, layout).then(function() {
+            $element.html('');
 
             if (documentURI !== document.documentURI) {
               anychart['graphics']['updateReferences']();
@@ -84,6 +98,10 @@ define([
             // Applying globals
             if (config.credits.licenseKey && typeof config.credits.licenseKey === 'string') {
               anychart['licenseKey'](config.credits.licenseKey);
+            }
+
+            if (config.defaultTheme && typeof config.defaultTheme === 'string') {
+              anychart['theme'](config.defaultTheme);
             }
 
             for (var l in config.localization) {
@@ -121,13 +139,12 @@ define([
                 $element.html(str);
               }
             }
-
-          } else {
-            // Load next data page
-          }
+          });
 
           return qlik.Promise.resolve();
-        }
+        },
+
+        resize: function($element, layout) {}
       };
     });
 
