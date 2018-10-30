@@ -229,6 +229,15 @@ _Note: As far as AnyChart Qlik Extension is still at the development stage, not 
     </tr>
 </table>
 
+### Sankey Chart
+
+<table>
+    <tr>
+        <td><img src="http://cdn.anychart.com/images/qlik-screens/sankey_1.png" alt="Sankey Chart, 1 - AnyChart Extension for Qlik Sense"></td>
+        <td><img src="http://static.anychart.com/cdn/images/qlik-screens/sankey_2.png" alt="Sankey Chart, 2 - AnyChart Extension for Qlik Sense"></td>
+    </tr>
+</table>
+
 ### Linear and Circular Gauges
 
 <table>

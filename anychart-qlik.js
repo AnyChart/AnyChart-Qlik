@@ -15,7 +15,7 @@ define([
 
       "css!./lib/anychart-ui.min.css",
       "css!./lib/anychart-editor.min.css",
-      "css!./lib/fonts.css",
+      "css!./lib/anychart-font.min.css",
       "css!./style.css"
     ],
     function($, pDef, config, qlik, dataAdapter, chartBuilder, chartEditor, proj4) {
