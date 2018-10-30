@@ -310,9 +310,9 @@ AnyChart Qlik Demo Application is a [anychart-qlik-demo-application.qvf](https:/
 ## Roadmap
 AnyChart offers best-in-class charting solution and we are working hard on adding new features. Here is the list of new features that we have already included in our release schedule. We have a very aggressive roadmap and we are ready to listen to you - our customers - about new improvements. We would appreciate any suggestions - please contact us with your ideas.
 
-### Version 2.5 (ETA Sep 2018):
-* Gantt Chart
-* Annotations and drawing tools
+### Version 2.6 (ETA Nov 2018):
+* Sankey Chart
+* Drop to default settings
 
 ## Contacts
 
