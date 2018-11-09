@@ -107,7 +107,7 @@ define([], function() {
           var value;
           if (row[j]['qState'] === 'O' || row[j]['qState'] === 'S' || row[j]['qIsOtherCell']) {
             // dimension
-            value = row[j]['qText'];
+            value = row[j]['qText'] === "null" ? null : row[j]['qText'];
             groupedDimValue = groupedDimValue ? groupedDimValue + '_' + value : value;
 
             result.dimensions[j]['indexes'].push(row[j]["qElemNumber"]);

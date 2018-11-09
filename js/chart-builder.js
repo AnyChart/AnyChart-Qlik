@@ -87,7 +87,7 @@ define(["./../config", "./../js/data-adapter"],
 
           // Qlik style interactivity initialization
           var chartType = chart['getType']();
-          if (['stock', 'tree-map', 'circular-gauge', 'linear-gauge'].indexOf(chartType) === -1) {
+          if ([void 0,'gantt-project', 'gantt-resource', 'sankey', 'stock', 'tree-map', 'circular-gauge', 'linear-gauge'].indexOf(chartType) === -1) {
             chart['interactivity']()['selectionMode']('none');
 
             _static[chartId]['pointClicked'] = false;
@@ -102,7 +102,7 @@ define(["./../config", "./../js/data-adapter"],
               evt.stopPropagation();
               evt.preventDefault();
 
-              if (evt.pointIndex !== undefined) {
+              if (evt.pointIndex !== void 0) {
                 _static[chartId]['pointClicked'] = true;
 
                 if (options.field) {
