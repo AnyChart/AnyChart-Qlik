@@ -70,6 +70,7 @@ define(["./../config", "./../js/data-adapter"],
                 if (dataKey && preparedData.fieldNames[dataKey]) {
                   var getSeries = k.replace('.name()', '');
                   var seriesName = preparedData.fieldNames[dataKey];
+                  seriesName = seriesName.replace(/'/g, "\\'");
                   var setting = 'if(chart.' + getSeries + ')chart.' + getSeries + '.name(\'' + seriesName + '\');';
 
                   var marker = '/*seriesNames=*/';
