@@ -125,16 +125,16 @@ define([
                         .attr({"id": containerId, "class": "chart-container"})
                         .css({"width": "100%", "height": "100%"}));
 
-                chart['container'](containerId);
-                chart['draw']();
-              } else {
-                var str = '<div class="intro-wrapper"><div class="intro">' +
-                    '<h1>Thank you for using AnyChart Qlik Sense Extension!</h1>' +
-                    'Now you can start configuring your chart.<br><br>' +
-                    'To run Chart Editor, please click on "Run Chart Editor" button in the Appearance Tab:' +
-                    '<div class="screenshot screenshot-1"></div><br>' +
-                    'Also you can use multiple measures and dimensions. Please use "Dimensions", "Measures" and "Sorting" tabs to setup your data:' +
-                    '<div class="screenshot screenshot-2"></div></div></div>';
+                  chart['container'](containerId);
+                  chart['draw']();
+  window['chart'] = chart;              } else {
+                  var str = '<div class="intro-wrapper"><div class="intro">' +
+                      '<h1>Thank you for using AnyChart Qlik Sense Extension!</h1>' +
+                      'Now you can start configuring your chart.<br><br>' +
+                      'To run Chart Editor, please click on "Run Chart Editor" button in the Appearance Tab:' +
+                      '<div class="screenshot screenshot-1"></div><br>' +
+                      'Also you can use multiple measures and dimensions. Please use "Dimensions", "Measures" and "Sorting" tabs to setup your data:' +
+                      '<div class="screenshot screenshot-2"></div></div></div>';
 
                 $element.html(str);
               }
