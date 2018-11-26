@@ -247,6 +247,15 @@ _Note: As far as AnyChart Qlik Extension is still at the development stage, not 
     </tr>
 </table>
 
+### Sankey
+
+<table>
+    <tr>
+        <td width="50%"><img src="http://cdn.anychart.com/images/qlik-screens/sankey_1.jpg" alt="Sankey - AnyChart Extension for Qlik Sense"></td>
+        <td width="50%"><img src="http://cdn.anychart.com/images/qlik-screens/sankey_2.jpg" alt="Sankey Chart - AnyChart Extension for Qlik Sense"></td>
+    </tr>
+</table>
+
 ### Linear and Circular Gauges
 
 <table>
@@ -310,9 +319,8 @@ AnyChart Qlik Demo Application is a [anychart-qlik-demo-application.qvf](https:/
 ## Roadmap
 AnyChart offers best-in-class charting solution and we are working hard on adding new features. Here is the list of new features that we have already included in our release schedule. We have a very aggressive roadmap and we are ready to listen to you - our customers - about new improvements. We would appreciate any suggestions - please contact us with your ideas.
 
-### Version 2.6 (ETA Nov 2018):
-* Sankey Chart
-* Drop to default settings
+### Version 2.7 (ETA Jan 2019):
+* The next release of AnyChart Qlik Extension will bring four specific versions for every AnyChart product.
 
 ## Contacts
 
