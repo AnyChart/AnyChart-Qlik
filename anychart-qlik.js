@@ -127,8 +127,6 @@ define([
 
                 chart['container'](containerId);
                 chart['draw']();
-
-                window['chart'] = chart;
               } else {
                 var str = '<div class="intro-wrapper"><div class="intro">' +
                     '<h1>Thank you for using AnyChart Qlik Sense Extension!</h1>' +
