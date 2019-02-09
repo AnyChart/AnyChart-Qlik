@@ -12,7 +12,7 @@ You can find AnyChart Qlik Extension on [AnyChart Extension Qlik Branch page](ht
 
 ## Download and install
 
-Download [AnyChart Qlick Sense Extension](https://github.com/AnyChart/AnyChart-Qlik/archive/master.zip).
+Download [AnyChart Qlik Sense Extension](https://github.com/AnyChart/AnyChart-Qlik/archive/master.zip).
 
 ### Installing Extension into Qlik Sense Desktop
 
