@@ -10,6 +10,8 @@ Qlik Sense is a self-service data visualization and discovery application design
 
 You can find AnyChart Qlik Extension on [AnyChart Extension Qlik Branch page](http://branch.qlik.com/#!/project/58cf59cd61d353a813f4a37e).
 
+AnyChart Extension includes such unique for Qlik Sense chart types as Sankey, Stock, Tag Cloud, Gantt Project, Gantt Resource, Mekko, Bar Mekko, HeatMap, Funnel, Radar,  Radar stacked (value), Radar stacked (percent), Polar, Mosaic, Circular Gauge, Linear Gauge, Led Gauge, Tank Gauge, Thermometer Gauge.  If you don’t see the chart type you need please contact us at <sales@anychart.com> and we’ll add it to our Roadmap.
+
 ## Download and install
 
 Download [AnyChart Qlik Sense Extension](https://github.com/AnyChart/AnyChart-Qlik/archive/master.zip).
