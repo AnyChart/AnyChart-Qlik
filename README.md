@@ -6,8 +6,6 @@ AnyChart JavaScript Visualization Library [extension](https://help.qlik.com/en-U
 
 [AnyChart](https://www.anychart.com/) is a flexible JavaScript (HTML5) based solution that allows developers to embed interactive and great looking charts and dashboards into any web, standalone or mobile project. AnyChart products include massive out-of-the-box capabilities, combined with the flexibility and the simplicity.
 
-Qlik Sense is a self-service data visualization and discovery application designed for all business users whether, individuals, groups, or organizations. With Qlik Sense you can analyze data and make data discoveries on your own. You can share knowledge and analyze data in groups and across organizations. Qlik Sense lets you ask and answer your own questions and follow your own paths to insight, as well as enabling you and your colleagues to reach decisions collaboratively.
-
 You can find AnyChart Qlik Extension on [AnyChart Extension Qlik Branch page](http://branch.qlik.com/#!/project/58cf59cd61d353a813f4a37e).
 
 AnyChart Extension includes such unique for Qlik Sense chart types as Sankey, Stock, Tag Cloud, Gantt Project, Gantt Resource, Mekko, Bar Mekko, HeatMap, Funnel, Radar,  Radar stacked (value), Radar stacked (percent), Polar, Mosaic, Circular Gauge, Linear Gauge, Led Gauge, Tank Gauge, Thermometer Gauge.  If you don’t see the chart type you need please contact us at <sales@anychart.com> and we’ll add it to our Roadmap.
