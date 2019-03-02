@@ -1,0 +1,14 @@
+{
+	"name": "AnyChart Mekko",
+	"description": "Anyvhart viz description",
+	"icon": "extension",
+	"type": "visualization",
+	"version": 1.0,
+	"preview": "img/anychart.png",
+	"author": "AnyChart",
+	"bundle": {
+        "id": "anychart-bundle",
+        "name": "AnyChart",
+        "description": "AnyChart bundle description"
+    }
+}
