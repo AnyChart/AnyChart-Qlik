@@ -16,18 +16,13 @@ requirejs.config({
       minMeasures: 1
     }
   },
-  paths: {
-    'plugin': 'http://127.0.0.1:8080/anychart-qlik'
-  }
+  baseUrl: 'https://static.anychart.com/demos/editor/AnyChart-Qlik-private/'
+  // baseUrl: 'http://127.0.0.1:8080/'
+  // paths: {
+  //   'plugin': 'http://127.0.0.1:8080/anychart-qlik'
+  // }
 });
 
-define([
-    'css!./css/style.css',
-    'css!./css/anychart-editor.min.css',
-    'css!./css/anychart-font.min.css',
-    'css!./css/anychart-ui.min.css',
-
-    'plugin'
-],function(css1, css2, css3, css4, plugin){
+define(['anychart-qlik'], function(plugin) {
   return plugin;
 });
