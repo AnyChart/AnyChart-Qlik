@@ -323,7 +323,7 @@ AnyChart offers best-in-class charting solution and we are working hard on addin
 ## Contacts
 
 * Web: [www.anychart.com](https://www.anychart.com)
-* Email: [contact@anychart.com](mailto:contact@anychart.com)
+* Email: [support@anychart.com](mailto:support@anychart.com)
 * Twitter: [anychart](https://twitter.com/anychart)
 * Facebook: [AnyCharts](https://www.facebook.com/AnyCharts)
 * LinkedIn: [anychart](https://www.linkedin.com/company/anychart)
@@ -331,15 +331,9 @@ AnyChart offers best-in-class charting solution and we are working hard on addin
 ## Links
 
 * [AnyChart Website](https://www.anychart.com)
-* [Download AnyChart](https://www.anychart.com/download/)
-* [AnyChart Licensing](https://www.anychart.com/buy/)
+* [Download AnyChart](https://www.anychart.com/technical-integrations/samples/qlik-charts/download/)
+* [AnyChart Licensing](https://www.anychart.com/technical-integrations/samples/qlik-charts/buy/)
 * [AnyChart Support](https://www.anychart.com/support/)
-* [Report Issues](https://github.com/AnyChart/AnyChart-Qlik/issues)
-* [AnyChart Playground](https://playground.anychart.com)
-* [AnyChart Documentation](https://docs.anychart.com)
-* [AnyChart API Reference](https://api.anychart.com)
-* [AnyChart Sample Solutions](https://www.anychart.com/solutions/)
-* [AnyChart Integrations](https://www.anychart.com/integrations/)
 
 ## License
 AnyChart Qlik Extension is released under Commercial license. You can test this extension with the trial version of AnyChart.  Check details [here](https://www.anychart.com/technical-integrations/samples/qlik-charts/buy/)
