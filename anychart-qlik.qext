@@ -1,9 +1,0 @@
-{
-	"name": "AnyChart",
-	"description": "Charts from the AnyChart Library",
-	"icon": "extension",
-	"type": "visualization",
-	"version": 2.6,
-	"preview": "anychart.png",
-	"author": "AnyChart"
-}

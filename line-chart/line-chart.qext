@@ -1,0 +1,14 @@
+{
+	"name": "Line Chart",
+	"description": "Line Chart, or Line Graph, is one of the most popular types of data visualization. It displays information as a series of data points connected by straight line segments.",
+	"icon": "extension",
+	"type": "visualization",
+	"version": "3.0",
+	"preview": "line-chart.png",
+	"author": "AnyChart",
+	"bundle": {
+        "id": "anychart-trial-package",
+        "name": "AnyChart Trial Edition",
+        "description": "AnyChart Qlik is a robust and eye-catching charting solution with numerous chart types and flexible settings. ........................................................... www.anychart.com"
+    }
+}

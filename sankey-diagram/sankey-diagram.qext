@@ -1,0 +1,14 @@
+{
+	"name": "Sankey Chart",
+	"description": "A Sankey chart is a flow diagram that shows nodes linked by flows, the quantity of each flow being represented as its width. This chart type emphasizes the major transfers or flows within a system and helps to locate dominant contributions to an overall flow.",
+	"icon": "stream",
+	"type": "visualization",
+	"version": "3.0",
+	"preview": "sankey-diagram.png",
+	"author": "AnyChart",
+	"bundle": {
+        "id": "anychart-trial-package",
+        "name": "AnyChart Trial Edition",
+        "description": "AnyChart Qlik is a robust and eye-catching charting solution with numerous chart types and flexible settings. ........................................................... www.anychart.com"
+    }
+}

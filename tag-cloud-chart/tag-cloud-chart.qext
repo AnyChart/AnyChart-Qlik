@@ -1,0 +1,14 @@
+{
+	"name": "Tag Cloud",
+	"description": "Tag Cloud is a chart type that helps visualize text data and mostly serves the purpose of conducting the word-frequency analysis across tags, keywords, and so on. Tag Clouds can nicely indicate how often each word is mentioned in a certain text body by means of using different colors and sizes for different levels of relative prominence.",
+	"icon": "text",
+	"type": "visualization",
+	"version": "3.0",
+	"preview": "tag-cloud-chart.png",
+	"author": "AnyChart",
+	"bundle": {
+        "id": "anychart-trial-package",
+        "name": "AnyChart Trial Edition",
+        "description": "AnyChart Qlik is a robust and eye-catching charting solution with numerous chart types and flexible settings. ........................................................... www.anychart.com"
+    }
+}

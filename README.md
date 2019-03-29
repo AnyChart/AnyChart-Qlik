@@ -302,24 +302,6 @@ _Note: As far as AnyChart Qlik Extension is still at the development stage, not 
     </tr>
 </table>
 
-## AnyChart Qlik Demo Application
-AnyChart Qlik Demo Application is a [anychart-qlik-demo-application.qvf](https://github.com/AnyChart/AnyChart-Qlik/raw/master/examples/anychart-qlik-demo-application.qvf) file which contains several sheets with all chart types available in AnyChart Qlik Extension. This Demo Applications files allows you to learn all the power of AnyChart Charts in combintation with Qlik Data Analytics Platform.
-
-<table>
-    <tr>
-        <td><img src="http://cdn.anychart.com/images/qlik-screens/qvf_1.png?v=1" alt="AnyChart Qlik Demo Application, 1 - AnyChart Extension for Qlik Sense"></td>
-        <td><img src="http://cdn.anychart.com/images/qlik-screens/qvf_2.png?v=1" alt="AnyChart Qlik Demo Application, 2 - AnyChart Extension for Qlik Sense"></td>
-    </tr>
-</table>
-
-
-
-## Roadmap
-AnyChart offers best-in-class charting solution and we are working hard on adding new features. Here is the list of new features that we have already included in our release schedule. We have a very aggressive roadmap and we are ready to listen to you - our customers - about new improvements. We would appreciate any suggestions - please contact us with your ideas.
-
-### Version 2.7 (ETA Jan 2019):
-* The next release of AnyChart Qlik Extension will bring four specific versions for every AnyChart product.
-
 ## Contacts
 
 * Web: [www.anychart.com](https://www.anychart.com)
