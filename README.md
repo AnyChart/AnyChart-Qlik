@@ -39,6 +39,32 @@ Chart Editor is an out-of-the-box chart generator and editor integrated with Any
 AnyChart product family includes more than [70 different chart](https://www.anychart.com/features/#chart-types) types and we're constantly adding new ones.  
 _Note: As far as AnyChart Qlik Extension is still at the development stage, not all charts are supported. See [roadmap](#roadmap) for details._ 
 
+### Gantt Project
+
+<table>
+    <tr>
+        <td width="50%"><img src="http://cdn.anychart.com/images/qlik-screens/gantt_1.jpg" alt="Gantt Project, 1 - AnyChart Extension for Qlik Sense"></td>
+        <td width="50%"><img src="http://cdn.anychart.com/images/qlik-screens/gantt_2.jpg" alt="Gantt Project, 2 - AnyChart Extension for Qlik Sense"></td>
+    </tr>
+</table>
+
+### Tag Cloud
+
+<table>
+    <tr>
+        <td width="50%"><img src="http://cdn.anychart.com/images/qlik-screens/tagcloud_1.jpg" alt="Tag Cloud, 1 - AnyChart Extension for Qlik Sense"></td>
+        <td width="50%"><img src="http://cdn.anychart.com/images/qlik-screens/tagcloud_2.jpg" alt="Tag Cloud, 2 - AnyChart Extension for Qlik Sense"></td>
+    </tr>
+</table>
+### Stock Chart
+
+<table>
+    <tr>
+        <td><img src="http://cdn.anychart.com/images/qlik-screens/stock_1.jpg" alt="Stock Chart, 1 - AnyChart Extension for Qlik Sense"></td>
+        <td><img src="http://cdn.anychart.com/images/qlik-screens/stock_2.jpg" alt="Stock Chart, 2 - AnyChart Extension for Qlik Sense"></td>
+    </tr>
+</table>
+
 ### Line Chart
 <table>
     <tr>
@@ -161,16 +187,6 @@ _Note: As far as AnyChart Qlik Extension is still at the development stage, not 
 </table>
 
 
-### Stock Chart
-
-<table>
-    <tr>
-        <td><img src="http://cdn.anychart.com/images/qlik-screens/stock_1.jpg" alt="Stock Chart, 1 - AnyChart Extension for Qlik Sense"></td>
-        <td><img src="http://cdn.anychart.com/images/qlik-screens/stock_2.jpg" alt="Stock Chart, 2 - AnyChart Extension for Qlik Sense"></td>
-    </tr>
-</table>
-
-
 ### Choropleth Map
 
 <table>
@@ -227,23 +243,6 @@ _Note: As far as AnyChart Qlik Extension is still at the development stage, not 
     </tr>
 </table>
 
-### Gantt Project
-
-<table>
-    <tr>
-        <td width="50%"><img src="http://cdn.anychart.com/images/qlik-screens/gantt_1.jpg" alt="Gantt Project, 1 - AnyChart Extension for Qlik Sense"></td>
-        <td width="50%"><img src="http://cdn.anychart.com/images/qlik-screens/gantt_2.jpg" alt="Gantt Project, 2 - AnyChart Extension for Qlik Sense"></td>
-    </tr>
-</table>
-
-### Tag Cloud
-
-<table>
-    <tr>
-        <td width="50%"><img src="http://cdn.anychart.com/images/qlik-screens/tagcloud_1.jpg" alt="Tag Cloud, 1 - AnyChart Extension for Qlik Sense"></td>
-        <td width="50%"><img src="http://cdn.anychart.com/images/qlik-screens/tagcloud_2.jpg" alt="Tag Cloud, 2 - AnyChart Extension for Qlik Sense"></td>
-    </tr>
-</table>
 
 ### Sankey
 
