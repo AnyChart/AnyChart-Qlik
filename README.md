@@ -2,11 +2,9 @@
 
 # AnyChart Qlik Extension 
 
-AnyChart JavaScript Visualization Library extension for Qlik Sense].
+AnyChart JavaScript Visualization Library extension for Qlik Sense.
 
-[AnyChart](https://www.anychart.com/technical-integrations/samples/qlik-charts/download/?utm_source=qlik-garden) is a flexible JavaScript (HTML5) based solution that allows developers to embed interactive and great looking charts and dashboards into any web, standalone or mobile project. AnyChart products include massive out-of-the-box capabilities, combined with the flexibility and the simplicity.
-
-AnyChart Extension includes such unique for Qlik Sense chart types as Sankey, Stock, Tag Cloud, Gantt Project, Gantt Resource, Mekko, Bar Mekko, HeatMap, Funnel, Radar,  Radar stacked (value), Radar stacked (percent), Polar, Mosaic, Circular Gauge, Linear Gauge, Led Gauge, Tank Gauge, Thermometer Gauge, Funnel Charts, Pyramid Charts, Quadrant Chart.  If you don’t see the chart type you need please contact us at <sales@anychart.com> and we’ll add it to our Roadmap.
+[AnyChart Extension](https://www.anychart.com/technical-integrations/samples/qlik-charts/download/?utm_source=qlik-garden) includes such unique for Qlik Sense chart types as Sankey, Stock, Tag Cloud, Gantt Project, Gantt Resource, Mekko, Bar Mekko, HeatMap, Funnel, Radar,  Radar stacked (value), Radar stacked (percent), Polar, Mosaic, Circular Gauge, Linear Gauge, Led Gauge, Tank Gauge, Thermometer Gauge, Funnel Charts, Pyramid Charts, Quadrant Chart.  If you don’t see the chart type you need please contact us at <sales@anychart.com> and we’ll add it to our Roadmap.
 
 ## Download and install
 
