@@ -6,7 +6,7 @@
 
 ## Download and install
 
-Download [AnyChart Qlik Sense Extension](https://www.anychart.com/technical-integrations/samples/qlik-charts/download/?utm_source=qlik-garden).
+Download [AnyChart Extension for Qlik Sense](https://www.anychart.com/technical-integrations/samples/qlik-charts/download/?utm_source=qlik-garden).
 
 ### Installing Extension into Qlik Sense Desktop
 
