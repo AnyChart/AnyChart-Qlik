@@ -1,12 +1,12 @@
-[<img src="https://cdn.anychart.com/images/logo-transparent-segoe.png?2" width="234px" alt="AnyChart - Robust JavaScript/HTML5 Chart library for any project">](https://www.anychart.com/technical-integrations/samples/qlik-charts/download/?utm_source=qlik-garden)
+[<img src="https://cdn.anychart.com/images/logo-transparent-segoe.png?2" width="234px" alt="AnyChart - Robust JavaScript/HTML5 Chart library for any project">](https://qlik.anychart.com/download/?utm_source=qlik-garden)
 
 # AnyChart Extension for Qlik - 36 new chart types
 
-[AnyChart Extension](https://www.anychart.com/technical-integrations/samples/qlik-charts/download/?utm_source=qlik-garden) includes such unique for Qlik Sense chart types as Sankey, Stock, Tag Cloud, Gantt Project, Gantt Resource, Mekko, Bar Mekko, HeatMap, Funnel, Radar,  Radar stacked (value), Radar stacked (percent), Polar, Mosaic, Circular Gauge, Linear Gauge, Led Gauge, Tank Gauge, Thermometer Gauge, Funnel Charts, Pyramid Charts, Quadrant Chart.  If you don’t see the chart type you need please contact us at <sales@anychart.com> and we’ll add it to our Roadmap.
+[AnyChart Extension](https://qlik.anychart.com/download/?utm_source=qlik-garden) includes such unique for Qlik Sense chart types as Sankey, Stock, Tag Cloud, Gantt Project, Gantt Resource, Mekko, Bar Mekko, HeatMap, Funnel, Radar,  Radar stacked (value), Radar stacked (percent), Polar, Mosaic, Circular Gauge, Linear Gauge, Led Gauge, Tank Gauge, Thermometer Gauge, Funnel Charts, Pyramid Charts, Quadrant Chart.  If you don’t see the chart type you need please contact us at <sales@anychart.com> and we’ll add it to our Roadmap.
 
 ## Download and install
 
-Download [AnyChart Extension for Qlik Sense](https://www.anychart.com/technical-integrations/samples/qlik-charts/download/?utm_source=qlik-garden).
+Download [AnyChart Extension for Qlik Sense](https://qlik.anychart.com/download/?utm_source=qlik-garden).
 
 ### Installing Extension into Qlik Sense Desktop
 
@@ -21,7 +21,7 @@ Then, in the action bar at the bottom of the screen, click “Import”
 Click “Choose File” in the popup and navigate to the folder that was downloaded, select it, then click “Import”.
 
 ## Chart Editor
-Chart Editor is an out-of-the-box chart generator and editor integrated with AnyChart Qlik Extension. Chart Editor has an intuitive user interface and provides access to more than [70 chart types](https://www.anychart.com/technical-integrations/samples/qlik-charts/download/?utm_source=qlik-garden) including Gantt Charts, Stock Charts, and Geo Maps.
+Chart Editor is an out-of-the-box chart generator and editor integrated with AnyChart Qlik Extension. Chart Editor has an intuitive user interface and provides access to more than [70 chart types](https://qlik.anychart.com/download/?utm_source=qlik-garden) including Gantt Charts, Stock Charts, and Geo Maps.
  
 <table>
     <tr>
@@ -299,7 +299,7 @@ _Note: As far as AnyChart Qlik Extension is still at the development stage, not 
 
 ## Contacts
 
-* Web: [www.anychart.com](https://www.anychart.com/technical-integrations/samples/qlik-charts/download/?utm_source=qlik-garden)
+* Web: [www.anychart.com](https://qlik.anychart.com/download/?utm_source=qlik-garden)
 * Email: [support@anychart.com](mailto:support@anychart.com)
 * Twitter: [anychart](https://twitter.com/anychart)
 * Facebook: [AnyCharts](https://www.facebook.com/AnyCharts)
@@ -307,13 +307,13 @@ _Note: As far as AnyChart Qlik Extension is still at the development stage, not 
 
 ## Links
 
-* [AnyChart Website](https://www.anychart.com/technical-integrations/samples/qlik-charts/download/?utm_source=qlik-garden)
-* [Download AnyChart](https://www.anychart.com/technical-integrations/samples/qlik-charts/download/?utm_source=qlik-garden)
-* [AnyChart Licensing](https://www.anychart.com/technical-integrations/samples/qlik-charts/buy/?utm_source=qlik-garden)
+* [AnyChart Website](https://qlik.anychart.com/download/?utm_source=qlik-garden)
+* [Download AnyChart](https://qlik.anychart.com/download/?utm_source=qlik-garden)
+* [AnyChart Licensing](https://qlik.anychart.com/buy/?utm_source=qlik-garden)
 * [AnyChart Support](https://www.anychart.com/support/)
 
 ## License
-AnyChart Qlik Extension is released under Commercial license. You can test this extension with the trial version of AnyChart.  Check details [here](https://www.anychart.com/technical-integrations/samples/qlik-charts/buy/?utm_source=qlik-garden)
+AnyChart Qlik Extension is released under Commercial license. You can test this extension with the trial version of AnyChart.  Check details [here](https://qlik.anychart.com/buy/?utm_source=qlik-garden)
 
 If you have any questions regarding licensing - please contact us. <sales@anychart.com>
 [![Analytics](https://ga-beacon.appspot.com/UA-228820-4/Plugins/Qlik?pixel&useReferer)](https://github.com/igrigorik/ga-beacon)
