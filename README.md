@@ -52,6 +52,7 @@ _Note: As far as AnyChart Qlik Extension is still at the development stage, not 
         <td width="50%"><img src="http://cdn.anychart.com/images/qlik-screens/tagcloud_2.jpg" alt="Tag Cloud, 2 - AnyChart Extension for Qlik Sense"></td>
     </tr>
 </table>
+
 ### Stock Chart
 
 <table>
