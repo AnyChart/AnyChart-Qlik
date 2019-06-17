@@ -1,4 +1,4 @@
-[<img src="https://cdn.anychart.com/images/logo-transparent-segoe.png?2" width="234px" alt="AnyChart - Robust JavaScript/HTML5 Chart library for any project">](https://qlik.anychart.com/download/?utm_source=qlik-garden)
+[<img src="https://cdn.anychart.com/images/logo-transparent-segoe.png?2" width="234px" alt="AnyChart - Robust JavaScript Chart library for any project">](https://qlik.anychart.com/download/?utm_source=qlik-garden)
 
 # AnyChart Extensions for Qlik (ver. 3.4) - Technical Indicators added and more...
 
