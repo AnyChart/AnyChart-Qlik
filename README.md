@@ -1,6 +1,6 @@
 [<img src="https://cdn.anychart.com/images/logo-transparent-segoe.png?2" width="234px" alt="AnyChart - Robust JavaScript Chart library for any project">](https://qlik.anychart.com/download/?utm_source=qlik-garden)
 
-# AnyChart Extensions for Qlik (ver. 3.4) - Technical Indicators  and more...
+# AnyChart Extensions for Qlik (ver. 3.4) - Technical Indicators and more...
 
 [AnyChart Extension](https://qlik.anychart.com/download/?utm_source=qlik-garden) includes such chart types as Sankey, Stock, Tag Cloud, Gantt Project, Gantt Resource, Mekko, Bar Mekko, HeatMap, Funnel, Radar,  Radar stacked (value), Radar stacked (percent), Polar, Mosaic, Circular Gauge, Linear Gauge, Led Gauge, Tank Gauge, Thermometer Gauge, Funnel Charts, Pyramid Charts, Quadrant Chart.  If you don’t see the chart type you need please contact us at <sales@anychart.com> and we’ll add it to our Roadmap.
 
