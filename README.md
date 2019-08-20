@@ -8,6 +8,11 @@
 
 Download [AnyChart Extension for Qlik Sense](https://qlik.anychart.com/download/?utm_source=qlik-garden).
 
+
+## NEW - How to create a Gantt chart in Qlik Sense using AnyGantt
+
+View [Step by Step Tutorial how to create a Gantt chart in Qlik Sense](https://youtu.be/v6eioPojrIc)
+
 ### Installing Extension into Qlik Sense Desktop
 
 Locate .zip file with extension and unzip it. Open the unzipped folder to find another folder inside. Copy that folder and navigate to *documents/qlik/sense/extensions* and paste the folder there.
