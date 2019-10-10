@@ -6,7 +6,7 @@
 
 ## NEW - How to create a Gantt chart in Qlik Sense using AnyGantt
 
-View [Step by Step Tutorial how to create a Gantt chart in Qlik Sense](https://youtu.be/v6eioPojrIc)
+View [Step by Step Tutorial how to create a Gantt chart in Qlik Sense](https://qlik.anychart.com/extensions/anygantt/overview/?utm_source=qlik-garden)
 
 ## Download and install
 
