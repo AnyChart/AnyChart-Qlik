@@ -8,7 +8,7 @@
 
 View [Step by Step Tutorial how to create a Gantt chart in Qlik Sense](https://qlik.anychart.com/extensions/anygantt/overview/?utm_source=qlik-garden)
 
-## Download and install
+## Download and install now
 
 Download [AnyChart Extension for Qlik Sense](https://qlik.anychart.com/download/?utm_source=qlik-garden).
 
